@@ -1,0 +1,38 @@
+[
+  {
+    "roadway": "Oakland Park Boulevard",
+    "placename": "Oakland Park",
+    "placename_ascii": "Oakland Park",
+    "placename_en": "Oakland Park",
+    "placetag": "town",
+    "latitude": 26.1723065,
+    "longitude": -80.1319893,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "Oakland Park Boulevard",
+    "placename": "Sunrise",
+    "placename_ascii": "Sunrise",
+    "placename_en": "Sunrise",
+    "placetag": "city",
+    "latitude": 26.1666888,
+    "longitude": -80.2787573,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "Oakland Park Boulevard",
+    "placename": "Lauderdale Lakes",
+    "placename_ascii": "Lauderdale Lakes",
+    "placename_en": "Lauderdale Lakes",
+    "placetag": "town",
+    "latitude": 26.1667184,
+    "longitude": -80.2085565,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  }
+]

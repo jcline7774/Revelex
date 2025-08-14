@@ -1,0 +1,122 @@
+[
+  {
+    "roadway": "FL A1A",
+    "placename": "Surfside",
+    "placename_ascii": "Surfside",
+    "placename_en": "Surfside",
+    "placetag": "town",
+    "latitude": 25.8784285,
+    "longitude": -80.1256007,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "FL A1A",
+    "placename": "Aventura",
+    "placename_ascii": "Aventura",
+    "placename_en": "Aventura",
+    "placetag": "town",
+    "latitude": 25.9564812,
+    "longitude": -80.1392121,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "FL A1A",
+    "placename": "Hollywood",
+    "placename_ascii": "Hollywood",
+    "placename_en": "Hollywood",
+    "placetag": "city",
+    "latitude": 26.0112014,
+    "longitude": -80.1494901,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "FL A1A",
+    "placename": "Miami Beach",
+    "placename_ascii": "Miami Beach",
+    "placename_en": "Miami Beach",
+    "placetag": "city",
+    "latitude": 25.7929198,
+    "longitude": -80.1353006,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "FL A1A",
+    "placename": "Dania Beach",
+    "placename_ascii": "Dania Beach",
+    "placename_en": "Dania Beach",
+    "placetag": "town",
+    "latitude": 26.0524224,
+    "longitude": -80.143929,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "FL A1A",
+    "placename": "Hallandale Beach",
+    "placename_ascii": "Hallandale Beach",
+    "placename_en": "Hallandale Beach",
+    "placetag": "town",
+    "latitude": 25.9812025,
+    "longitude": -80.148379,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "FL A1A",
+    "placename": "North Miami Beach",
+    "placename_ascii": "North Miami Beach",
+    "placename_en": "North Miami Beach",
+    "placetag": "town",
+    "latitude": 25.9331488,
+    "longitude": -80.1625463,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "FL A1A",
+    "placename": "Sunny Isles Beach",
+    "placename_ascii": "Sunny Isles Beach",
+    "placename_en": "Sunny Isles Beach",
+    "placetag": "town",
+    "latitude": 25.9426915,
+    "longitude": -80.1218486,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "FL A1A",
+    "placename": "Miami Beach",
+    "placename_ascii": "Miami Beach",
+    "placename_en": "Miami Beach",
+    "placetag": "city",
+    "latitude": 25.8102574,
+    "longitude": -80.1400954,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "FL A1A",
+    "placename": "Surfside",
+    "placename_ascii": "Surfside",
+    "placename_en": "Surfside",
+    "placetag": "town",
+    "latitude": 25.879473,
+    "longitude": -80.1265765,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "roadway": "Atlantic Avenue",
+    "placename": "Lake Worth Beach",
+    "placename_ascii": "Lake Worth Beach",
+    "placename_en": "Lake Worth Beach",
+    "placetag": "town",
+    "latitude": 26.6159698,
+    "longitude": -80.0569927,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "Atlantic Avenue",
+    "placename": "Lantana",
+    "placename_ascii": "Lantana",
+    "placename_en": "Lantana",
+    "placetag": "town",
+    "latitude": 26.5865308,
+    "longitude": -80.052166,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "Atlantic Avenue",
+    "placename": "Deerfield Beach",
+    "placename_ascii": "Deerfield Beach",
+    "placename_en": "Deerfield Beach",
+    "placetag": "city",
+    "latitude": 26.318342,
+    "longitude": -80.0996306,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "Atlantic Avenue",
+    "placename": "Delray Beach",
+    "placename_ascii": "Delray Beach",
+    "placename_en": "Delray Beach",
+    "placetag": "town",
+    "latitude": 26.4614625,
+    "longitude": -80.0728201,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "Atlantic Avenue",
+    "placename": "Dania Beach",
+    "placename_ascii": "Dania Beach",
+    "placename_en": "Dania Beach",
+    "placetag": "town",
+    "latitude": 26.0524224,
+    "longitude": -80.143929,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "Atlantic Avenue",
+    "placename": "Boynton Beach",
+    "placename_ascii": "Boynton Beach",
+    "placename_en": "Boynton Beach",
+    "placetag": "town",
+    "latitude": 26.5256179,
+    "longitude": -80.0666026,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "Atlantic Avenue",
+    "placename": "Sunny Isles Beach",
+    "placename_ascii": "Sunny Isles Beach",
+    "placename_en": "Sunny Isles Beach",
+    "placetag": "town",
+    "latitude": 25.9426915,
+    "longitude": -80.1218486,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  },
+  {
+    "roadway": "Atlantic Avenue",
+    "placename": "Delray Beach",
+    "placename_ascii": "Delray Beach",
+    "placename_en": "Delray Beach",
+    "placetag": "town",
+    "latitude": 26.4560022,
+    "longitude": -80.0928037,
+    "state/province": "Florida",
+    "state/province-ascii": "Florida",
+    "country": "United States"
+  }
+]
