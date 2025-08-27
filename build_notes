@@ -1,0 +1,30 @@
+So I'm writing these notes mainly as a guide to how I built this project but it's also a bit of a confession as I'm not a geospacial coding expert.
+
+The purpose of the app was an interview test for a junior coding position.  It came as a surprise and I was grateful for the opportunity but given
+the state of the economy and how hard it is to land a decent job these days, I figured I didn't have a lot of time to get this done without missing the window.
+
+Now lets get the elephant out of the room.  As mentinoed I'm no expert a geospacial app coding but I'm not an idiot either so I did the smart thing.  I used my resources...
+
+What does that mean?  Well today in 2025 it means something different than it meant 2 years ago just as much as it meant something different 2 decades ago which might as 
+well have been 2 centuries ago. So after whiteboarding the project and spending close to 30 hours of non-stop reading and researching the use of recommended api,  
+I enlisted some help from ai.
+
+Now a year ago, if a job interviewer asked me if I used ai in my work, I sheepishly replied yes and admitted to it coming in handy about 20% of the time which may have even been an 
+exaggeration but I felt like I was admitting to cheating in a sense however it was expected.  It took me a while to realize this wasn't the case.  In another interview scenario 
+when I was specifically tasked with using AI to solve a problem I realized I was being gaugeed on my proficiency with using it and how I formulated my queries.  That's when it made sense
+that the interviewers were weeding out those who were not adept at using ai as a resource just as if they didn't know how to google something.  Now I confidently admit that I'm using it 
+at least 50/50 because it can and it has saved me countless hours.
+
+The task is not using it, the task is now using it responsibly.  Yes it can do a lot but there are some issues.  First, you can't let it do everything without ending up loosing some skills.  
+For example and I hate to date myself but prior to cell phones, I could remember the  phone number of a hundred differnt people regardless of how often or not I called them... Today I'm lucky
+if I can remember a dozen because I store them once and never dial them again.  Next, it is only doing what you ask of it - it doesn't read into your intentions or desires so what you get back
+is relative.  The more complex the request, the more likely it won't be perfect.
+
+Anyway, yes I enlisted the help of ai but not to do the job for me but to help, in a similar way that all those searches I read up on  regarding the ovpass api and QGIS, openstreetmap and reverse geocoding.
+I used all the resources at my disposal to get the job done as I would have any other way.  Again and I stress, AI didn't write this all but I used it for checking and cleaning up.  I won't lie, After I finished,
+I did ask it to write a code for this and guess what, it did but it was pretty bad and didn't work the way I wwanted it to.  Any time I pointed out a mistake or something wrong, it just said your right and tried something else
+and by the end, it wasn't even close to where it started nor where it needed to be... at least for this project.
+
+So there it is and I'm thankful for it and I'm also thankful that it's not the only tool we have because without the actual api documentation and wiki pages - I'd still be working on this.
+
+It's been over a week since I submitted this so just for reference, I've decided to publish my whiteboarding work and the examples of the code documentation that helped save me.  Use it if you need it.
