@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="whiteboard.css">
+    <title>API Test Whiteboard: Geospatial Roadway Project</title>
+    </head>
+<body>
+    <div class="whiteboard">
+        <h1 class="title"> Geospatial Roadway Project Planning</h1>
+        
+        <div class="section">
+            <h3>📋 Assignment Requirements</h3>
+            <ul>
+                <li>Find roadway coordinates (I-95, FL A1A, etc.)</li>
+                <li>Create 500m buffer around roads</li>
+                <li>Find cities/towns within buffer</li>
+                <li>Create JSON response with requested fields</li>
+                <li>Use Overpass API or QGIS</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>🔄 Data Flow Diagram</h3>
+            <div class="flow-diagram">
+                <div class="flow-box">
+                    <strong>1. Get City Location from user input</strong><br>
+                    Input: "Miami, FL"<br>
+                    - Nominatim API<br>
+                    - Bounding Box
+                </div>
+                <div class="flow-box">
+                    <strong>2. Find Roadway from next user input</strong><br>
+                     Input: "I 95" + bbox<br> <!--note names with dash and without dash are producing different results -->
+                    - Overpass API<br>
+                    - Coordinates List
+                </div>
+                <div class="flow-box">
+                    <strong>3. Create Buffer Zone</strong><br>
+                    Coords - LineString<br>
+                    - UTM Transform<br>
+                    - 500m Buffer
+                </div>
+                <div class="flow-box">
+                    <strong>4. Find Places</strong><br>
+                    Buffer area<br>
+                    - Overpass Query<br>
+                    - Cities/Towns
+                </div>
+                <div class="flow-box">
+                    <strong>5. Format ResponseOutput</strong><br>
+                    Places - JSON<br>
+                    + State/Country<br>
+                    - Save to File
+                </div>
+            </div>
+        </div>
+
+        <div class="api-notes">
+            <h3>📚 API Research Notes</h3>
+            <div class="handwriting">
+                <p><strong>Overpass API:</strong> wiki.openstreetmap.org/wiki/Overpass_API</p>
+                <p>• Query format: [out:json]; way["highway"]["ref"~"I 95"]; out geom;</p>
+                <p>• Need bbox to limit search area</p>
+                <p>• Different element types: node, way, relation</p>
+                
+                <p><strong>Nominatim:</strong> nominatim.openstreetmap.org</p>
+                <p>• Geocoding: search endpoint</p>
+                <p>• Reverse geocoding: reverse endpoint</p>
+                <p>• Must include User-Agent header!</p>
+            </div>
+        </div>
+
+        <div class="problems">
+            <h3>❌ Problems Encountered</h3>
+            <ul>
+                <li><strong>Coordinate Systems:</strong> Can't do 500m buffer in lat/lon degrees!</li>
+                <li><strong>API Rate Limits:</strong> Getting blocked without proper headers</li>
+                <li><strong>Data Inconsistency:</strong> Some ways have center_lat, some don't</li>
+                <li><strong>Duplicates:</strong> Same place appearing multiple times</li>
+                <li><strong>Naming Conventions:</strong> Same name written differently has different results</li>
+                <li><strong>API Hangups:</strong> direct API call times out or just hangs indefinitely</li>
+            </ul>
+        </div>
+
+        <div class="solutions">
+            <h3>✅ Solutions Found</h3>
+            <ul>
+                <li><strong>UTM Projection:</strong> Convert to meters, buffer, convert back</li>
+                <li><strong>Headers:</strong> Add User-Agent with email contact</li>
+                <li><strong>hasattr() checks:</strong> Test for attributes before using</li>
+                <li><strong>Deduplication:</strong> Use set with (name, lat, lon) tuples</li>
+                <li><strong>Altenatives:</strong> Use Mirror API suggestions</li>
+            </ul>
+        </div>
+
+        <div class="code-sample">
+<strong>Key Code Patterns from Documentation:</strong>
+
+# UTM Zone calculation (from pyproj docs)
+utm_zone = int((longitude + 180) / 6) + 1
+
+# Overpass query structure (from wiki)
+query = """
+[out:json][timeout:60];
+(
+  way["ref"~"I 95"]["highway"];
+);
+out geom;
+"""
+
+# Error handling (instructor guidance)
+if res.status_code != 200:
+    return {}
+        </div>
+
+        <div class="todo-list">
+            <h3>📝 Development Checklist</h3>
+            <ul>
+                <li class="done">Research APIs and install libraries</li>
+                <li class="done">Basic Overpass query test</li>
+                <li class="done">Extract roadway coordinates</li>
+                <li class="done">Add city bounding box</li>
+                <li class="done">Figure out 500m buffer (UTM projection)</li>
+                <li class="done">Find places in buffer area</li>
+                <li class="done">Add error handling (.get() methods)</li>
+                <li class="done">Format JSON output</li>
+                <li class="done">Add deduplication</li>
+                <li>Test with different roadways</li>
+                <li>Compare overpy vs direct HTTP</li>
+                <li>Clean up code and add comments</li>
+            </ul>
+        </div>
+
+        <div class="sticky-note">
+            <strong>Remember:</strong><br>
+            Add time.sleep(1) so you don't overload APIs!
+        </div>
+
+        <div class="sticky-note">
+            <strong>Training notes:</strong><br>
+            Use .get() methods to prevent KeyError crashes
+        </div>
+
+        <div class="sticky-note">
+            <strong>Test Cases:</strong><br>
+            • I 95 near Miami<br>
+            • Route 66 near Flagstaff<br>
+            • US 1 near Key West
+        </div>
+
+        <div class="section">
+            <h3>🔧 Libraries Needed</h3>
+            <div class="code-snippet">
+pip install overpy requests shapely pyproj
+            </div>
+            <ul>
+                <li><strong>overpy:</strong> Overpass API wrapper</li>
+                <li><strong>requests:</strong> HTTP requests for Nominatim</li>
+                <li><strong>shapely:</strong> Geometric operations (buffer, contains)</li>
+                <li><strong>pyproj:</strong> Coordinate transformations</li>
+            </ul>
+        </div>
+
+        <div class="section handwriting">
+            <h3>💡 Lessons Learned</h3>
+            <p>• Always read the API documentation first!</p>
+            <p>• Geographic data is confusing and complex - need lots of error checking</p>
+            <p>• Coordinate systems matter for distance calculations</p>
+            <p>• Rate limiting is real - don't abuse free APIs</p>
+            <p>• Test before trying to get fancy - complexity will kill your code...</p>
+        </div>
+    </div>
+</body>
+</html>

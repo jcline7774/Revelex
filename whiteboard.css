@@ -1,0 +1,128 @@
+body {
+            font-family: 'Comic Sans MS', cursive;
+            background: #f8f8f8;
+            margin: 20px;
+            line-height: 1.4;
+        }
+        .whiteboard {
+            background: white;
+            border: 3px solid #333;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .title {
+            text-align: center;
+            color: #2c5aa0;
+            font-size: 24px;
+            text-decoration: underline;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin: 25px 0;
+            padding: 15px;
+            border-left: 4px solid #ff6b6b;
+            background: #fff5f5;
+        }
+        .section h3 {
+            color: #d63031;
+            margin-top: 0;
+        }
+        .flow-diagram {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .flow-box {
+            background: #e8f4fd;
+            border: 2px solid #0984e3;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+        }
+        .flow-box::after {
+            content: "↓";
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            color: #0984e3;
+        }
+        .flow-box:last-child::after {
+            display: none;
+        }
+        .api-notes {
+            background: #fff3cd;
+            border: 2px dashed #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .code-sample {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+        .problems {
+            background: #ffe6e6;
+            border: 2px solid #ff4757;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .solutions {
+            background: #e6ffe6;
+            border: 2px solid #2ed573;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .handwriting {
+            font-family: 'Kalam', cursive;
+            transform: rotate(-1deg);
+            color: #2d3436;
+        }
+        .todo-list {
+            background: #f0f8ff;
+            border: 2px solid #74b9ff;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .todo-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .todo-list li {
+            margin: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .todo-list li::before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #74b9ff;
+            font-size: 16px;
+        }
+        .todo-list li.done::before {
+            content: "☑";
+            color: #00b894;
+        }
+        .sticky-note {
+            background: #ffeb3b;
+            border: 1px solid #fbc02d;
+            padding: 10px;
+            margin: 10px;
+            transform: rotate(2deg);
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            display: inline-block;
+            font-size: 12px;
+        }
